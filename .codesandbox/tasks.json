@@ -1,0 +1,50 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "pnpm build",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true
+    },
+    "generate": {
+      "name": "generate",
+      "command": "pnpm generate",
+      "runAtStart": false
+    },
+    "preview": {
+      "name": "preview",
+      "command": "pnpm preview",
+      "runAtStart": false
+    },
+    "postinstall": {
+      "name": "postinstall",
+      "command": "pnpm postinstall",
+      "runAtStart": false
+    },
+    "pnpm add quasar @quasar/extras": {
+      "name": "pnpm add quasar @quasar/extras",
+      "command": "pnpm add quasar @quasar/extras"
+    },
+    "pnpm add -D nuxt-quasar-ui": {
+      "name": "pnpm add -D nuxt-quasar-ui",
+      "command": "pnpm add -D nuxt-quasar-ui"
+    },
+    "rm -rf node_modules && npm install": {
+      "name": "reinstalar",
+      "command": "rm -rf node_modules && npm install"
+    }
+  }
+}
